@@ -2,6 +2,7 @@ import React from 'react';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
+import 'firebase/storage';
 import PlayMusic from './PlayMusic';
 class AllSongs extends React.Component
 {
@@ -16,7 +17,7 @@ class AllSongs extends React.Component
     }
     componentDidMount()
     {
-        firebase.storage().ref().child('music').listAll()
+        firebase.storage('gs://music-1a349.appspot.com').ref().child('music').listAll()
             .then((data) =>
             {
                 data.items.forEach(async (ref) =>

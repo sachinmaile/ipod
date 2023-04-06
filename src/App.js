@@ -1,5 +1,4 @@
 import React from "react";
-import MenuPad from "./MenuPad";
 import Screen from "./Screen";
 import Buttons from "./Buttons";
 import ZingTouch from 'zingtouch';

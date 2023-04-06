@@ -5,9 +5,10 @@ import App from './App';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
+import 'firebase/storage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-const firebaseConfig = {
+var firebaseConfig = {
   apiKey: "AIzaSyAQCsO7lIh6LVEmPcpWIUTzB79_oE4vHs0",
   authDomain: "music-1a349.firebaseapp.com",
   projectId: "music-1a349",
